@@ -1,4 +1,4 @@
-Topic : Multi-hour flow allocation  
+# Topic : Multi-hour flow allocation using LSTM to avoid congestion
 
 # To-do  
 1. AMPL Model
