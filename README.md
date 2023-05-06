@@ -5,7 +5,7 @@
 
 2. Demand prediction:  
   LSTM:  
-  a. Recerate data by demand(source - target)
-  b. create a list of models by each demand
+  a. Recerate data by demand(source - target)  
+  b. create a list of models by each demand  
   ARIMA:  
   
