@@ -30,7 +30,7 @@ In cell _Model loading_, make sure the directory is where [save TCN model](https
 
 
 ------------------
-For both prediction model:
-Uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.   
-The sequences of demands that prediction based on are randomly chosen. 
+For both prediction model:  
+Uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.     
+The sequences of demands that prediction based on are randomly chosen.   
 In section *Output to AMPL form*, make sure you change *pred_dir*, *true_dir* to specify where the AMPL form demands  will be output. 
