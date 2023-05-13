@@ -25,9 +25,10 @@ In cell *Model loading*, make sure the directory is where [saved LSTM model](htt
 
 
 
-### Temporal Convolutional Network(TCN)
-Run  [ECE7363_TCN.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_TCN.ipynb). In *prepare data* section,  specify *train_data* and *test_data* to load processed data.  
+### Temporal Convolutional Network(TCN)  
+Run  [ECE7363_TCN.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_TCN.ipynb). In *prepare data* section,  specify *train_data* and *test_data* to load processed data. 
 In cell _Model loading_, make sure the directory is where [saved TCN model](https://github.com/Max1897/ECE7363_project/tree/main/saved%20models/TCN) are.   
+
 ------------------
 For both prediction model:  
 Uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.     
