@@ -5,7 +5,7 @@
 The workflow is   
 1.Download raw data and process it.   
 2. Prediction generation using .ipynb file   
-3. Input prediction to model in AMPL 
+3. Linear programming AMPL 
 ## 1. Preparation
  ### Step 1
  We use *GEANT* traffic demand data throughout the project, download its native data first.   
