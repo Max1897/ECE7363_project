@@ -4,7 +4,7 @@
 # Running
 The workflow is   
 1.Download raw data and process it.   
-2. Prediction generation using .ipynb file 
+2. Prediction generation using .ipynb file   
 3. Input prediction to model in AMPL 
 ## Preparation
  ### Step 1
