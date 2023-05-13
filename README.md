@@ -29,6 +29,26 @@ In cell *Model loading*, make sure the directory is where [saved LSTM model](htt
 Run  [ECE7363_TCN.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_TCN.ipynb). In *prepare data* section,  specify *train_data* and *test_data* to load processed data.  
 In cell _Model loading_, make sure the directory is where [saved TCN model](https://github.com/Max1897/ECE7363_project/tree/main/saved%20models/TCN) are.   
 
+## Linear programming
+We propose three linear programming models, ECMPTotalCost.mod, ECMPTotalDelay.mod, ECMPUtilization.mod, focusing on different objectives. And these three models all need data whose format is like following.
+### Data format
+The data that can be solved by ECMTotalCost.mod, ECMPTotalDelay.mod, ECMPUtilization.mod need the same format just like LSTMPred4.dat, LSTMPred5.dat, LSTMPred6.dat.
+1. Number of demands;
+2. Number of links;
+3. Number of noeds;
+4. Source node, destination node, capacity and cost of each link;
+5. Weights of each link;
+6. Source node, destination node, volume of each demand;
+7. Big number M.
+
+### LP model
+Three models here can be used to solve different problems. For example, ECMPTotalCost.mod allocates flow aiming on minimizing the total cost, ECMPUtilization.mod focusing on minimizing the maximum utilizaiton of all links, and ECMPTotalDelay.mod handling with minizing the average delay among all links.
+
+After reformat the data, the problem can be directly solved by using AMPL terminal, like following (all AMPL commands),
+1. model ECMP-----.mod;
+2. data ----.dat;
+3. solve;
+4. display ----.
 
 ------------------
 For both prediction model:  
