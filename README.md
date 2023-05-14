@@ -16,7 +16,7 @@ Then run [data_processing.py](https://github.com/Max1897/ECE7363_project/blob/ma
 ## 2. Generate prediction
 
 ### ARIMA  
-
+Run[ECE7363_ARIMA_improved](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_ARIMA_improved.ipynb).
 
 ### LSTM
 Run [ECE7363_LSTM.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_LSTM.ipynb).    
@@ -24,14 +24,16 @@ Run [ECE7363_LSTM.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/sr
 In cell *Model loading*, make sure the directory is where [saved LSTM model](https://github.com/Max1897/ECE7363_project/tree/main/saved%20models/LSTM) are.  
 
 ### Temporal Convolutional Network(TCN)  
-Run  [ECE7363_TCN_Improved.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_TCN_Improved.ipynb). In *prepare data* section,  specify *train_data* and *test_data* to load processed data. 
+Run  [ECE7363_TCN_Improved.ipynb](https://github.com/Max1897/ECE7363_project/blob/main/src/ECE7363_TCN_Improved.ipynb).  
 In cell _Model loading_, make sure the directory is where [saved TCN model](https://github.com/Max1897/ECE7363_project/tree/main/saved%20models/TCN) are.   
 
 ------------------
-For both prediction model:  
-In *prepare data* section, specify variable *work_dir*,*train_data* and *test_data* to load data processed.
-Uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.     
-The sequences of demands that prediction based on are randomly chosen.   
+For all prediction model:  
+In *prepare data* section, specify variable *work_dir*,*train_data* and *test_data* to load data processed.  
+
+For ARIMA, in section *Model training* select the start and end index you like (0-5000).  
+For LSTM and TCN, uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.     
+After training is done, the sequences of demands that prediction based on are randomly chosen.   
 In section *Output to AMPL form*, make sure you change *pred_dir*, *true_dir* to specify where the AMPL form demands  will be output.   
 
 ## 3. Linear programming
