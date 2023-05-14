@@ -7,12 +7,11 @@ The workflow is
 2. Prediction generation using .ipynb file   
 3. Linear programming using AMPL 
 ## 1. Preparation
- ### Step 1
+ 
  We use *GEANT* traffic demand data throughout the project, download its native data first.   
 http://sndlib.zib.de/home.action    
 
-### Step 2
-Run [data_processing.py](https://github.com/Max1897/ECE7363_project/blob/main/src/data_processing.py) . Specify variable *demand_matrices_dir* as the directory of raw data and *output_dir* as the output directory.  
+Then run [data_processing.py](https://github.com/Max1897/ECE7363_project/blob/main/src/data_processing.py) . Specify variable *demand_matrices_dir* as the directory of raw data and *output_dir* as the output directory.  
 
 ## 2. Generate prediction
 
