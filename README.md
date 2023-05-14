@@ -34,7 +34,9 @@ In *prepare data* section, specify variable *work_dir*,*train_data* and *test_da
 For ARIMA, in section *Model training* select the start and end index you like (0-5000).  
 For LSTM and TCN, uncomment the cell in _Start training_ section if you want to train the model. The estimated training time on T4 GPU is 2 hours for both of them.     
 After training is done, the sequences of demands that prediction based on are randomly chosen.   
-In section *Output to AMPL form*, make sure you change *pred_dir*, *true_dir* to specify where the AMPL form demands  will be output.   
+In section *Output to AMPL form*, make sure you change *pred_dir*, *true_dir* to specify where the AMPL form demands  will be output.  
+
+Predicted demand and their true demand are in the data folder.
 
 ## 3. Linear programming
 We propose three linear programming models, ECMPTotalCost.mod, ECMPTotalDelay.mod, ECMPUtilization.mod, focusing on different objectives. And these three models all need data whose format is like following.
